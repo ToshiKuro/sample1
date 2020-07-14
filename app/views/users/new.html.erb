@@ -1,0 +1,16 @@
+<h1>登録</h1>
+
+<%= form_tag(users_path, method: :post) do %>
+  名前
+  <%= text_field :user ,:username %>
+  <br>
+  LOCATION
+  <%= text_field :user ,:location %>
+  <br>
+  ABOUT
+  <%= text_field :user ,:about %>
+  <br>
+  <%= submit_tag '登録' %>
+<% end %>
+
+
